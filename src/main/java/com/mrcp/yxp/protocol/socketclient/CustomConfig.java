@@ -43,6 +43,7 @@ public class CustomConfig implements Config {
             //inetAddress = InetAddress.getLocalHost();
             // if you have several network interfaces like I do,
             // select the right one after running ipconfig or ifconfig
+            // 新增可配置的ip地址
             inetAddress = InetAddress.getByName(clientIp);
         } catch (UnknownHostException e) {
             e.printStackTrace();
