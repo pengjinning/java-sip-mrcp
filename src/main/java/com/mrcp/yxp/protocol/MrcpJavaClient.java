@@ -22,6 +22,7 @@ import java.util.concurrent.ArrayBlockingQueue;
 
 
 public class MrcpJavaClient implements SipListener {
+    
     private static Logger log = LogManager.getLogger(MrcpJavaClient.class);
 
     public  static  final String audioPathLeft = "/Users/yinxingpan/freeswitch-data/third_server/mrcp-proxy-server/mrcpclientdemo/audio/test_8k_left.pcm";

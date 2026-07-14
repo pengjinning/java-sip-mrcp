@@ -1,25 +1,12 @@
 
 # Java SIP MRCP
-如果您有mrcp-server需求，可以在此申请[https://lowbibi.com/mrcp-server-ban-ben-fa-bu/]
-基于mrcp-server的智能问答，b站演示视频：[https://www.bilibili.com/video/BV1Ea4y197Kc/]
-
-你可以线上体验：[https://lowbibi.com/yinphone/#/call/call]
-账号 zx1234      zx1234
-分机 1001  密码 yin-123
-拨号 1234
-
-
 
 Java SIP MRCP 是一个基于 Java 的项目，实现了 SIP 协议和 MRCPv2 协议，用于实时语音转写（ASR）的媒体传输。
-
 
 你可以基于此实现支持语音转写的客户端，
 你也可基于此实现 java 版本 mrcp-server
 
-![](audio/mrcp.gif)
-
-
-mrcp协议介绍[https://lowbibi.com/mrcp/]
+![mrcp](audio/mrcp.gif)
 
 ## 功能特点
 
@@ -66,21 +53,13 @@ mrcp协议介绍[https://lowbibi.com/mrcp/]
 
 
 ```$xslt
-
-
-https://github.com/laoyin/java-sip-mrcp/blob/master/src/main/java/com/mrcp/yxp/protocol/MrcpJavaClient.java
-
-src/main/java/com/mrcp/yxp/protocol/MrcpJavaClient.java
-
-示例就是MrcpJavaClient
+// 示例就是MrcpJavaClient
 
 初始化 sipagent。
 
 userAgent = new UserAgent(this,
                 new CustomConfig(LocalHostIp, new PipedOutputStream(), new ArrayBlockingQueue(100)),
                 null, null);
-
-
 
 try{
  sipRequest = userAgent.invite("sip:mrcp@"+MrcpServerIp+":"+MrcpServerPort, null);
@@ -112,30 +91,4 @@ hangup(userAgent, sipRequest);
 
 ```
 
-
 运行mrcpJavaClient
-
-
-作者和联系方式
-qq：  2637332218
-
-致谢
-。
-下一步，新增LLM-大模型接入
-
-![](audio/200-zixun.jpg)
-
-
-支持一下作者
-
-一毛我也要
-一块也是肉
-十块刚刚好
-百元不得了
-千元有点吊
-万元岂止吊
-十万吊中吊
-百万嗷嗷叫
-千万笑到老
-一亿随便搞
-十亿我尽孝
