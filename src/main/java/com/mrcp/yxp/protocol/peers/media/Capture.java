@@ -17,7 +17,7 @@
     Copyright 2008, 2009, 2010, 2011 Yohann Martineau
 */
 
-package com.mrcp.yxp.protocol.peers.media;;
+package com.mrcp.yxp.protocol.peers.media;
 
 import java.io.IOException;
 import java.io.PipedOutputStream;
